@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+   </head>
+   <body>
+      <script src="script.js"></script>
+      <header>
+      <div class="inner-width">
+         <h1 class="logo">101<span style="color:#273b91;">College</span>Tips</h1><h1 class="tagline">"A Classical Education for the future"</h1>
+         <i class="menu-toggle-btn fas fa-bars"></i>
+         <nav class="navigation-menu">
+           <a href="index.html"><i class="fas fa-home home"></i> Home</a>
+           <a href="gussypage.html"><i></i> Gus</a>
+           <a href="jackpage.html"><i></i> Jack</a>
+           <a href="conor.html"><i></i> Conor</a>
+          </nav>
+       </div>
+      </header>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#gallery">onHover Images</a>
+        <a href="#jsgallery">onClick JS Images</a>
+        <a href="#main0">Tic Tac Toe</a>
+        <a href="#indexcontact">Contact us!</a>
+      </div>
+
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰Sidebar</button>
+
+      </div>
+
+         <main>
+            <div id="main0">
+
+               <h1 class="tictac">TIC TAC TOE</h1>
+
+
+               <!-- Game Instructions -->
+               <p id="ins">Game starts by just Tap on
+                   box<br><br>First Player starts as
+                   <b>Player X</b><br>And<br>Second
+                   Player as <b>Player 0</b>
+               </p>
+
+
+
+
+               <br><br>
+               <!-- 3*3 grid of Boxes -->
+               <input type="text" id="b1" onclick=
+                   "myfunc_3(); myfunc();" readonly>
+
+               <input type="text" id="b2" onclick=
+                   "myfunc_4(); myfunc();" readonly>
+
+               <input type="text" id="b3" onclick=
+                   "myfunc_5(); myfunc();" readonly>
+               <br><br>
+
+               <input type="text" id="b4" onclick=
+                   "myfunc_6(); myfunc();" readonly>
+
+               <input type="text" id="b5" onclick=
+                   "myfunc_7(); myfunc();" readonly>
+
+               <input type="text" id="b6" onclick=
+                   "myfunc_8(); myfunc();" readonly>
+               <br><br>
+
+               <input type="text" id="b7" onclick=
+                   "myfunc_9(); myfunc();" readonly>
+
+               <input type="text" id="b8" onclick=
+                   "myfunc_10();myfunc();" readonly>
+
+               <input type="text" id="b9" onclick=
+                   "myfunc_11();myfunc();" readonly>
+
+               <!-- Grid end here  -->
+               <br><br><br>
+               <!-- Button to reset game -->
+               <button id="but" onclick="myfunc_2()">
+                   RESET
+               </button>
+
+               <br><br>
+               <!-- Space to show player turn -->
+               <p id="print"></p>
+
+        </div>
+
+        <div id="gallery" class="gallery">
+<!--This is an exmaple of a responsive image through JS onHover func.-->
+            <img src="images/coffee.jpg" title="Coffee">
+            <img src="images/desk.jpg" title="desk">
+            <img src="images/pcphoto1.jpg" title="Study">
+            <img src="images/study.jpg" title="At study">
+          </div>
+    <!--I used a onClick event here to show text over images. I could not figure out how to do both events at the same time -->
+          <div id="jsgallery" class = "gallery">
+              <div class = "textOnImage" style="background-image:url(images/coffee.jpg)" onclick="toggleCoffeeText()">
+                  <div id = coffee>
+                      Caffeine is class
+                  </div>
+             </div>
+              <div class = "textOnImage" style="background-image:url(images/desk.jpg)" onclick="toggleDeskText()">
+                  <div id="desk">
+                      Desks are required
+                  </div>
+              </div>
+              <div class = "textOnImage" style="background-image:url(images/pcphoto1.jpg)" onclick="togglePCText()">
+                  <div id="PC">
+                      Computers are necessary
+                  </div>
+              </div>
+              <div class = "textOnImage" style="background-image:url(images/study.jpg)" onclick="toggleStudyText()">
+                  <div id="study">
+                      All to get some study done
+                  </div>
+              </div>
+          </div>
+<!--This Gallery was completed by Conor-->
+          <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3>101<span>College</span>Tips</h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Home Page</a>
+                    ·
+                    <a href="gussypage.html">Gus's Page</a>
+                    ·
+                    <a href="conor.html">Conor's Page</a>
+                    ·
+                    <a href="jackpage.html">Jack's Page</a>
+                    ·
+                <p class="footer-company-name">Group Number; 30</p>
+
+
+            </div>
+
+            <div id="indexcontact" class="footer-right">
+
+                <p>Contact Us</p>
+
+                <form class="form" action="index.html" method="get">
+                    <input id = "nameF" type="text" name="name" placeholder="Name">
+                    <label for="Gender"></label>
+                    <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                      <option value="Unspecified">Unspecified</option>
+                    </select>
+          <!--in the input type we used specifiers like number,text,email to help further specifiy the user input -->
+                    <input id="emailF" type="email" name="email" placeholder="Email">
+                    <input id="phoneF" type="number" name="phone" placeholder="Phone Number">
+                    <textarea id="messageF" name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="submit" onclick="show_alert()">
+
+                </form>
+         </main>
+         <!--lets rest of the content the website-->
+
+
+   </body>
+</html>

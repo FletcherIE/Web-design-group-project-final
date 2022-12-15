@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <!--These are my link tags (stylesheet, fonts and js sheet just below) (meta tag allows scale for different devices) -->
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+   </head>
+   <body>
+     <!-- js sheet link -->
+      <script src="script.js"></script>
+      <header>
+         <div class="inner-width">
+            <h1 class="logo">101<span style="color:#3f4899;">College</span>Tips</h1>
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+               <a href="index.html"><i></i> Home</a>
+               <a href="gussypage.html"><i></i> Gus</a>
+               <a href="jackpage.html"><i></i> Jack</a>
+               <a href="conor.html"><i></i> Conor</a>
+            </nav>
+         </div>
+      </header>
+      <!-- Everything involving the sidenavbar -->
+      <!-- The href is using a jumptag that allows the page to jump to a certain portion of the page when clicked -->
+      <div id="mySidebar" class="sidebar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="#gusjump1">Make a Study Plan</a>
+         <a href="#gusjump2">Keep your Study Area Separate</a>
+         <a href="#gusjump3">Take Hand Notes During Online Classes</a>
+         <a href="#gusjump4">Best time to study and memorize</a>
+         <a href="#gusjump5">Contact us!</a>
+      </div>
+      <div id="main">
+         <button class="openbtn" onclick="openNav()">☰ Sidebar</button>
+      </div>
+      <!--Here im setting headings to be able to style them in CSS-->
+      <div id="mypagespacing">
+         <!--I used different h2 tag as I liked the scale to which it fit on the page. Eye catching that encapsulates all the info under it-->
+         <!-- Each paragraph is tagged with an id to allow the sidebar to jump to that portion of the page. ("Contact us" is also tagged with this.) -->
+         <br><br>
+         <h2 id ="gusjump1" class ="h2conor">Make a Study Plan</h2>
+         <p><span style="color: blue">One way that a student can improve their writing skills is by setting aside dedicated time for writing and practicing regularly. This can involve writing essays, research papers, or other written assignments for classes, as well as writing for personal projects or interests. It's also important for students to seek feedback on their writing, either from a teacher or tutor, or from a peer review group. This can help to identify strengths and areas for improvement, and provide guidance on how to improve. Additionally, students can benefit from reading widely and exposing themselves to different writing styles and forms, as this can help to expand their vocabulary and improve their writing. Regular practice and dedication are key to improving writing skills.
+            </span>
+         </p>
+         <img class ="image01" src="images/plan.jpeg" alt="para1">
+         <br><br><br>
+         <br><br>
+         <hr>
+         <h2 id ="gusjump2" class ="h2conor">Keep your Study Area Separate</h2>
+         <p><span style="color: blue">One way a student can keep their study area separate is by setting aside a specific room or area in their home for studying. This designated space should be free of distractions and equipped with the necessary tools and resources for academic success, such as a desk, chair, and bookshelves. It's also important to establish boundaries and let others in the household know that this space is for studying only and should not be disturbed during designated study times. Additionally, it can be helpful to minimize clutter and keep the study area organized to maintain a clear and focused mindset. Maintaining a consistent study schedule and setting aside dedicated time for studying in this space can also help to reinforce its purpose and importance. </span></p>
+         <img class="image2" src="images/gusdesk.jpeg" alt="para2">
+         <br><br>
+         <br><br><br>
+         <h2 id ="gusjump3" class ="h2conor">Take Hand Notes During Online Classes</h2>
+         <p><span style="color: blue">Taking hand notes during online classes can be a helpful way for students to actively engage with the material and improve their understanding of the subject. To effectively take notes, students should start by organizing the information into main points and subpoints, and use abbreviations and symbols to save time and space. It's also important to listen carefully and actively participate in the online class, asking questions and clarifying any points that are unclear. Additionally, students should avoid simply copying down everything that is said, and instead focus on capturing the most important information and ideas. Reviewing and organizing the notes immediately after the class can also help to solidify the material and identify any gaps in understanding.</span></p>
+         <img class ="image3" src="images/notes.jpeg" alt="para3">
+         <hr>
+         <br><br><br>
+         <h2 id ="gusjump4" class ="h2conor">Best time to study and memorize</h2>
+         <p><span style="color: blue">Finding the best time to study and memorize can vary depending on the individual student and their personal schedule and preferences. Some students may find that they are more alert and focused in the morning, while others may be more productive in the evening. It's important for students to experiment and identify the times of day when they are most able to concentrate and retain information. In general, it's best to avoid studying right before bedtime, as this can interfere with sleep and make it difficult to retain information. Additionally, it can be helpful to break up study sessions into shorter, more focused periods of time, rather than trying to study for long stretches at once. Regular breaks and physical activity can also help to improve focus and concentration.</p>
+         </span>
+         <img class ="image4" src="images/time.jpeg" alt="para4">
+
+      </div>
+      </div>
+      <!--This is where my footer lines begin, Everything to do with footer is here -->
+      <footer class="footer-distributed">
+         <div class="footer-left">
+            <h3>101<span>College Tips</span></h3>
+            <p class="footer-links">
+               <a href="index.html">Home Page</a>
+               ·
+               <a href="jackpage.html">Jack's Page</a>
+               ·
+               <a href="conor.html">Conor's Page</a>
+               ·
+            <p class="footer-company-name">Gustavo Carneiro Da Costa x22104020</p>
+            <!--This is my icon section -->
+            <div class="footer-icons">
+               <a href="https://www.lipsum.com/"><i class="fa fa-facebook"></i></a>
+               <a href="https://www.linkedin.com/in/gustavocarneiro6/"><i class="fa fa-linkedin"></i></a>
+               <a href="https://github.com/Gdecessus"><i class="fa fa-github"></i></a>
+            </div>
+         </div>
+         <div id="indexcontact" class="footer-right">
+
+            <p id="gusjump5">Contact Us</p>
+
+            <form class="form" action="index.html" method="get">
+                <input id = "nameF" type="text" name="name" placeholder="Name">
+                <label for="Gender"></label>
+                <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                  <option value="Unspecified">Unspecified</option>
+                </select>
+      <!--in the input type we used specifiers like number,text,email to help further specifiy the user input -->
+                <input id="emailF" type="email" name="email" placeholder="Email">
+                <input id="phoneF" type="number" name="phone" placeholder="Phone Number">
+                <textarea id="messageF" name="message" placeholder="Message"></textarea>
+                <input type="submit" value="submit" onclick="show_alert()">
+
+            </form>
+   </body>
+</html>
